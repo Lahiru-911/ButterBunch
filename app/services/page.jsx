@@ -105,70 +105,73 @@ const services = () => {
         </div>
       </div>
 
+      <div>
+      {/* Game Drives Section */}
       <div
-        className="w-full bg-cover bg-center bg-fixed"
+        className="w-full h-[300px] bg-cover bg-center bg-fixed flex items-center justify-center text-center text-white text-3xl font-bold shadow-lg"
         style={{ backgroundImage: "url('/game.jpg')" }}
       >
-        <div className="flex items-center justify-center h-[300px] text-center text-white text-3xl font-bold shadow-lg">
-          Just ask your ranger!
+        Just ask your ranger!
+      </div>
+
+      <div className="w-[90%] max-w-[1200px] mx-auto py-16">
+        {/* Game Drives Section with white background */}
+        <div className="flex flex-col md:flex-row items-center justify-between mb-16 bg-white p-8 rounded-lg shadow-lg">
+          <img
+            src="/game1.jpg"
+            alt="Game Drives"
+            className="w-full md:w-[45%] rounded-xl mb-8 md:mb-0"
+          />
+          <div className="w-full md:w-[50%]">
+            <h2 className="text-[#C1932D] text-2xl">Game Drives</h2>
+            <p className="text-lg mb-5">
+              There are two daily game drives at Thamaravila Wilpattu, one leaving early in the morning and one leaving late afternoon, each lasting around three to four hours.
+              Full-day game-drive of Wilpattu National Park can be arranged on your choice. Your dedicated ranger will tailor the game drive for you.
+            </p>
+          </div>
         </div>
 
-        <div className="w-[90%] max-w-[1200px] mx-auto py-16">
-          <div className="flex items-center justify-between mb-16">
-            <img
-              src="/game1.jpg"
-              alt="Game Drives"
-              className="w-[45%] rounded-xl"
-            />
-            <div className="w-[50%]">
-              <h2 className="text-[#C1932D] text-2xl">Game Drives</h2>
-              <p className="text-lg mb-5">
-                There are two daily game drives at Thamaravila Wilpattu...
-              </p>
-            </div>
+        {/* Morning Drives Section with white background */}
+        <div className="flex flex-col md:flex-row items-center justify-between mb-16 bg-white p-8 rounded-lg shadow-lg">
+          <div className="w-full md:w-[50%]">
+            <h3 className="text-[#C1932D]">Morning Drives</h3>
+            <p className="text-lg mb-5">
+              You might not be a morning person, but it’s certainly worth getting out of bed for this. Your ranger will meet you at first light (05:30-06:00am).
+            </p>
+            <p className="text-lg mb-5">
+              This is the best time to spot wildlife, as animals are still active, including leopards returning from a night of hunting.
+            </p>
           </div>
+          <img
+            src="/game2.jpg"
+            alt="Morning Drives"
+            className="w-full md:w-[45%] rounded-xl h-[300px] mb-8 md:mb-0"
+          />
+        </div>
 
-          <div className="flex items-center justify-between mb-16">
-            <div className="w-[50%]">
-              <h3 className="text-[#C1932D]">Morning Drives</h3>
-              <p className="text-lg mb-5">
-                You might not be a morning person but it’s certainly worth
-                getting out of bed...
-              </p>
-            </div>
-            <img
-              src="/game2.jpg"
-              alt="Morning Drives"
-              className="w-[45%] rounded-xl h-[300px]"
-            />
-          </div>
-
-          <div className="flex items-center justify-between mb-16">
-            <img
-              src="/game3.jpg"
-              alt="Afternoon Drives"
-              className="w-[45%] rounded-xl h-[300px]"
-            />
-            <div className="w-[50%]">
-              <h3 className="text-[#C1932D]">Afternoon Drives</h3>
-              <p className="text-lg mb-5">
-                There is something special about the wild as the late afternoon
-                light starts to fade...
-              </p>
-              <h3 className="text-[#C1932D]">
-                5 Tips to Make the Game Drive of your own
-              </h3>
-              <ul className="list-disc ml-5 text-lg mb-5">
-                <li>Do not bring your mobile phone.</li>
-                <li>Leave your mobile phones behind to keep calm the wild.</li>
-                <li>Take binoculars.</li>
-                <li>We provide a pair of binoculars on each game drive...</li>
-                <li>Bring a good camera.</li>
-              </ul>
-            </div>
+        {/* Afternoon Drives Section with white background */}
+        <div className="flex flex-col md:flex-row items-center justify-between mb-16 bg-white p-8 rounded-lg shadow-lg">
+          <img
+            src="/game3.jpg"
+            alt="Afternoon Drives"
+            className="w-full md:w-[45%] rounded-xl h-[300px] mb-8 md:mb-0"
+          />
+          <div className="w-full md:w-[50%]">
+            <h3 className="text-[#C1932D]">Afternoon Drives</h3>
+            <p className="text-lg mb-5">
+              There is something special about the wild as the late afternoon light starts to fade. Animals start to mingle from their daytime slumber, and the predators start trailing their targets.
+            </p>
+            <h3 className="text-[#C1932D]">5 Tips to Make the Game Drive Your Own</h3>
+            <ul className="list-disc ml-5 text-lg mb-5">
+              <li>Do not bring your mobile phone.</li>
+              <li>Leave your mobile phones behind to keep calm the wild.</li>
+              <li>Take binoculars (we provide a pair on each game drive, but bring your own if you have them).</li>
+              <li>Bring a good camera.</li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

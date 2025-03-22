@@ -65,7 +65,7 @@ const Home = () => {
 
           <Link
             href="/services"
-            className="inline-block px-6 py-3 border border-[#e86e16] text-black font-semibold hover:bg-[#e86e16] hover:text-white transition duration-300 rounded-4xl"
+            className="inline-block px-4 py-2 border border-[#e86e16] text-black font-semibold hover:bg-[#e86e16] hover:text-white transition duration-300 rounded-4xl"
           >
             Services →
           </Link>

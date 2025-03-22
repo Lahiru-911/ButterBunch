@@ -2,30 +2,29 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroSlider from "@/components/HeroSlider/page";
 import React from "react";
-import LocationSection from "@/components/LetCelebrate/page";
 import LetCelebrate from "@/components/LetCelebrate/page";
 
 const Home = () => {
   const services = [
     {
-      title: "Luxury Tented Chalets",
+      title: "Custom Birthday Cakes",
       description:
-        "Thamaravila Wilpattu hosts a collection of 5 luxury tented Chalets of 1000sqft each built on stilts, featuring natural thatched roofs and open-air wooden decks with serene views of nature and wildlife.",
-      image: "/service1.jpg",
+        "Celebrate with our handcrafted custom cakes, made with the finest ingredients and designed to match your style. Whether it’s a grand party or intimate gathering, each cake is freshly baked and delivered to make your birthday unforgettable.",
+      image: "/i1.jpg",
       link: "/services",
     },
     {
-      title: "Cuisine",
+      title: "Wedding & Anniversary Cakes",
       description:
-        "Thamaravila Wilpattu offers a range of bespoke dining options with cuisines ranging from traditional Sri Lankan cuisine to international cuisine depending on guest preference.",
-      image: "/service2.jpg",
+        "Make your special day even sweeter with our custom wedding and anniversary cakes. Crafted with love and the finest ingredients, each cake is designed to match your unique style and celebrate your love story. Freshly baked and elegantly delivered to make your moments unforgettable.",
+      image: "/i2.jpg",
       link: "/services",
     },
     {
-      title: "Game Drives",
+      title: "Cupcakes & Treat Boxes",
       description:
-        "There are two daily game drives at Thamaravila Wilpattu, one leaving early in the morning and one in the late afternoon, each lasting around three to four hours.",
-      image: "/service3.jpg",
+        "Delight your guests with our delicious cupcakes and treat boxes, perfect for any occasion. Made with the finest ingredients and beautifully decorated, each bite offers a sweet touch of joy. Freshly baked and ready to brighten any celebration.",
+      image: "/i3.jpg",
       link: "/services",
     },
   ];
@@ -74,7 +73,7 @@ const Home = () => {
         {/* Right Side (Video) */}
         <div className="flex-1 mt-16 ">
           <video
-            src="/g.mp4" 
+            src="/g.mp4"
             autoPlay
             muted
             loop
@@ -83,38 +82,49 @@ const Home = () => {
         </div>
       </section>
 
-      <LetCelebrate/>
+      <LetCelebrate />
 
-      <section className="max-w-[1200px] mx-auto px-5 py-20 text-center">
-        <h2 className="text-3xl font-bold text-[#C1932D] mb-10">
-          Our Services
+      <section className="max-w-7xl mx-auto px-6 py-24 text-center">
+        {/* Section Heading */}
+        <h2 className="text-4xl md:text-5xl font-extrabold text-[#ff532c] mb-4 tracking-tight">
+          Our Main Products
         </h2>
+        <p className="text-lg md:text-xl text-gray-600 mb-14 max-w-2xl mx-auto leading-relaxed">
+          Handcrafted Cakes for Every Occasion — Delivered Fresh to Your
+          Doorstep!
+        </p>
 
-        <div className="flex flex-wrap justify-center gap-6">
+        {/* Product Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-xl overflow-hidden max-w-[350px] flex flex-col"
+              className="group bg-white shadow-lg rounded-2xl overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2"
             >
-              <div className="relative w-full h-[220px]">
+              {/* Image */}
+              <div className="relative w-full h-60">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                   priority
                 />
               </div>
-              <div className="p-5 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold text-[#C1932D] mb-3">
+
+              {/* Content */}
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-2xl font-semibold text-[#ff532c] mb-4 group-hover:text-black transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-sm text-gray-700 mb-5 flex-grow">
+                <p className="text-gray-600 text-base mb-6 flex-grow leading-relaxed">
                   {service.description}
                 </p>
+
+                {/* CTA Button */}
                 <Link
                   href={service.link}
-                  className="inline-block mt-auto px-5 py-2 bg-[#C1932D] text-white rounded hover:bg-black hover:text-[#C1932D] transition duration-300"
+                  className="inline-block mt-auto px-6 py-3 bg-[#ff532c] text-white font-medium text-sm rounded-full shadow-md transition-all duration-300 ease-in-out hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-[#ff532c] focus:ring-offset-2"
                 >
                   Learn More
                 </Link>

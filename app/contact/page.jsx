@@ -21,7 +21,7 @@ const Contact = () => {
           loop
           className="object-cover w-full h-full"
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/g.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold text-shadow-lg text-center">

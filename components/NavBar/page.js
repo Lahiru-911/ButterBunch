@@ -1,4 +1,4 @@
-'use client'; // For Next.js 13+ app directory (optional if using client-side logic)
+'use client';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Close menu when clicking outside (optional improvement)
+  
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (!event.target.closest('.navbar-container')) {
@@ -59,7 +59,7 @@ const Navbar = () => {
         {/* Book Now Button (Hidden on mobile) */}
         <div className="hidden md:block">
           <Link href="/contact">
-            <button className="bg-[#ff532c] text-white px-5 py-2 rounded-4xl hover:bg-yellow-600 transition duration-300">
+            <button className="bg-[#ff532c] text-white px-5 py-2 rounded-4xl hover:bg-[#ff412cf4] transition duration-300">
               Order Now
             </button>
           </Link>

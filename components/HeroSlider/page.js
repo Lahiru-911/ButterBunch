@@ -5,11 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const slides = [
-  { src: "/h1.jpg", alt: "Thamaravila Wilpattu" },
-  { src: "/h2.jpg", alt: "Luxury Tented Safari Villas" },
-  { src: "/h3.jpg", alt: "Resort & Hotel" },
-  { src: "/h4.jpg", alt: "Resort & Hotel" },
-  { src: "/h5.jpg", alt: "Resort & Hotel" },
+  { src: "/h1.jpg", alt: "cake1" },
+  { src: "/h2.jpg", alt: "cake2" },
+  { src: "/h3.jpg", alt: "cake3" },
+  { src: "/h4.jpg", alt: "cake4" },
+  { src: "/h5.jpg", alt: "cake5" },
 ];
 
 export default function HeroSlider() {
@@ -50,18 +50,19 @@ export default function HeroSlider() {
                   priority={index === 0}
                 />
                 {/* Content inside the image */}
-
-                <div className="relative z-20 flex flex-col items-center justify-center text-center text-white h-full px-4">
-                  <h2 className="text-2xl mb-2">WELCOME TO</h2>
-                  <h1 className="text-4xl md:text-5xl font-bold mb-2 text-[#ff532c]">
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-20">
+                  <h2 className="text-xl md:text-2xl font-semibold mb-2">
+                    WELCOME TO
+                  </h2>
+                  <h1 className="text-3xl md:text-5xl font-bold mb-2">
                     Butter Bunch Cakes
                   </h1>
-                  <h3 className="text-xl mb-6">
+                  <h3 className="text-lg md:text-xl mb-6">
                     Delicious Cakes & Sweet Treats
                   </h3>
                   <Link
                     href="/about"
-                    className="px-6 py-3 bg-white text-black rounded-4xl font-semibold hover:bg-[#e86e16] hover:text-white transition duration-300 " 
+                    className="px-4 py-2 bg-white border border-[#ff532c] text-black rounded-4xl font-medium text-sm hover:bg-[#ff532c] hover:text-white transition duration-300"
                   >
                     EXPLORE OUR CAKES
                   </Link>
@@ -73,25 +74,25 @@ export default function HeroSlider() {
       </div>
 
       {/* Controls */}
-      <div className="absolute top-1/2 left-0 right-0 flex justify-between items-center px-6 z-30 transform -translate-y-1/2">
+      <div className="absolute top-1/2 left-0 right-0 flex justify-between items-center px-6 z-30 transform -translate-y-1/2 hidden md:flex">
         <button
           onClick={prevSlide}
           aria-label="Previous Slide"
-          className="bg-white/70 hover:bg-[#e86e16] hover:text-white text-[#e86e16] shadow-md rounded-full p-1 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e86e16] focus:ring-offset-2"
+          className="bg-white/70 hover:bg-[#ff532c] hover:text-white text-[#ff532c] shadow-md rounded-full p-1 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#ff532c] focus:ring-offset-2"
         >
           <span className="text-lg">&#10094;</span>
         </button>
         <button
           onClick={nextSlide}
           aria-label="Next Slide"
-          className="bg-white/70 hover:bg-[#e86e16] hover:text-white text-[#e86e16] shadow-md rounded-full p-1 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e86e16] focus:ring-offset-2"
+          className="bg-white/70 hover:bg-[#ff532c] hover:text-white text-[#ff532c] shadow-md rounded-full p-1 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#ff532c] focus:ring-offset-2"
         >
           <span className="text-lg">&#10095;</span>
         </button>
       </div>
 
       {/* Overlay for darker effect (optional) */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-10"></div>
+      {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20 z-10"></div> */}
     </section>
   );
 }

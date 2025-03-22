@@ -5,6 +5,7 @@ import React from "react";
 import LetCelebrate from "@/components/LetCelebrate/page";
 
 const Home = () => {
+  // Define services array for dynamic product rendering
   const services = [
     {
       title: "Custom Birthday Cakes",
@@ -31,10 +32,11 @@ const Home = () => {
 
   return (
     <div>
+      {/* Hero Slider Section */}
       <HeroSlider />
 
+      {/* Introduction Section */}
       <section className="flex flex-col md:flex-row max-w-[1200px] mx-auto px-5 py-20">
-        {/* Left Side (Text) */}
         <div className="flex-1 md:pr-10 mb-10 md:mb-0">
           <h1 className="text-3xl md:text-4xl font-bold text-[#ff532c] mb-4">
             Butter Bunch Cakes
@@ -70,7 +72,7 @@ const Home = () => {
             Products →
           </Link>
         </div>
-        {/* Right Side (Video) */}
+
         <div className="flex-1 mt-16 ">
           <video
             src="/g.mp4"
@@ -82,10 +84,11 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Let Celebrate Section */}
       <LetCelebrate />
 
+      {/* Main Products Section */}
       <section className="max-w-7xl mx-auto px-6 py-24 text-center">
-        {/* Section Heading */}
         <h2 className="text-4xl md:text-5xl font-extrabold text-[#ff532c] mb-4 tracking-tight">
           Our Main Products
         </h2>
@@ -94,14 +97,12 @@ const Home = () => {
           Doorstep!
         </p>
 
-        {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <div
               key={index}
               className="group bg-white shadow-lg rounded-2xl overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2"
             >
-              {/* Image */}
               <div className="relative w-full h-60">
                 <Image
                   src={service.image}
@@ -112,7 +113,6 @@ const Home = () => {
                 />
               </div>
 
-              {/* Content */}
               <div className="p-3 flex flex-col flex-grow">
                 <h3 className="text-2xl font-semibold text-[#ff532c] mb-4 group-hover:text-black transition-colors duration-300">
                   {service.title}
@@ -121,7 +121,6 @@ const Home = () => {
                   {service.description}
                 </p>
 
-                {/* CTA Button */}
                 <Link
                   href={service.link}
                   className="inline-block mt-auto px-4 py-3 bg-[#ff532c] text-white font-medium text-sm rounded-full shadow-md transition-all duration-300 ease-in-out hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-[#ff532c] focus:ring-offset-2"
@@ -134,22 +133,20 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Exclusive Offers Section */}
       <section className="relative w-full text-white py-16 md:py-24 px-5 overflow-hidden">
-        {/* Next.js Image as background */}
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/o1.jpg" // Ensure this image exists in the public/images directory
+            src="/o1.jpg"
             alt="Exclusive Offers Background"
             layout="fill"
             objectFit="cover"
             priority={true}
             quality={100}
           />
-          {/* Optional overlay for darkening */}
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
-        {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto bg-white/50 p-8 md:p-12 text-center rounded-xl shadow-lg">
           <h2 className="text-3xl font-bold text-black mb-5 sm:text-4xl lg:text-5xl">
             Sweet Deals Just for You
@@ -172,27 +169,28 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Sustainability Practices Section */}
       <section className="max-w-screen-xl mx-auto py-16 px-6 text-center">
         <h2 className="text-3xl font-semibold text-[#ff532c] mb-12 sm:text-4xl lg:text-5xl">
           Sustainable Baking Practices
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-10">
-          {/* Sustainability Image */}
-          <div className="flex-1 max-w-md sm:max-w-[450px] lg:max-w-[500px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          {/* Image Section */}
+          <div className="flex justify-center items-center">
             <Image
-              src="/sustainability.jpg" // Ensure the image is in your public/images folder
+              src="/o2.jpg"
               alt="Sustainability"
-              width={500}
-              height={350}
-              className="w-full h-auto rounded-lg shadow-lg"
+              width={600}
+              height={400}
+              className="w-full h-auto rounded-lg shadow-lg object-cover"
             />
           </div>
 
-          {/* Sustainability Content */}
-          <div className="flex-1 max-w-md sm:max-w-[450px] lg:max-w-[500px] text-left">
-            <p className="text-base sm:text-lg text-[#333] leading-relaxed">
-              At Butter Bunch, we believe that every sweet treat should be made
+          {/* Text Section */}
+          <div className="flex justify-center items-center">
+            <p className="text-base sm:text-lg lg:text-xl text-[#333] leading-relaxed max-w-lg mx-auto">
+              At <span className="font-semibold">Butter Bunch</span>, we believe that every sweet treat should be made
               with love and care for the planet. That's why we prioritize
               sustainable ingredients, eco-friendly packaging, and waste
               reduction in every step of our baking process. Enjoy our delicious

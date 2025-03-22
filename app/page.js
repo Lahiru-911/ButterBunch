@@ -36,7 +36,7 @@ const Home = () => {
       <section className="flex flex-col md:flex-row max-w-[1200px] mx-auto px-5 py-20">
         {/* Left Side (Text) */}
         <div className="flex-1 md:pr-10 mb-10 md:mb-0">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#e86e16] mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#ff532c] mb-4">
             Butter Bunch Cakes
           </h1>
           <p className="text-base leading-relaxed text-gray-700 mb-4 text-justify">

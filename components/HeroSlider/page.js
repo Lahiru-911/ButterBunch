@@ -54,7 +54,7 @@ export default function HeroSlider() {
                   <h2 className="text-xl md:text-2xl font-semibold mb-2">
                     WELCOME TO
                   </h2>
-                  <h1 className="text-3xl md:text-5xl font-bold mb-2">
+                  <h1 className="text-3xl md:text-5xl font-bold mb-2 tracking-widest">
                     Butter Bunch Cakes
                   </h1>
                   <h3 className="text-lg md:text-xl font-semibold mb-6">
@@ -74,7 +74,7 @@ export default function HeroSlider() {
       </div>
 
       {/* Controls */}
-      <div className="absolute top-1/2 left-0 right-0 flex justify-between items-center px-6 z-30 transform -translate-y-1/2 hidden md:flex">
+      <div className="absolute top-1/2 left-0 right-0 justify-between items-center px-6 z-30 transform -translate-y-1/2 hidden md:flex">
         <button
           onClick={prevSlide}
           aria-label="Previous Slide"

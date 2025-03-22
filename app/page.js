@@ -113,18 +113,18 @@ const Home = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6 flex flex-col flex-grow">
+              <div className="p-3 flex flex-col flex-grow">
                 <h3 className="text-2xl font-semibold text-[#ff532c] mb-4 group-hover:text-black transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 text-base mb-6 flex-grow leading-relaxed">
+                <p className="text-gray-600 text-base mb-6 flex-grow leading-relaxed text-justify">
                   {service.description}
                 </p>
 
                 {/* CTA Button */}
                 <Link
                   href={service.link}
-                  className="inline-block mt-auto px-6 py-3 bg-[#ff532c] text-white font-medium text-sm rounded-full shadow-md transition-all duration-300 ease-in-out hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-[#ff532c] focus:ring-offset-2"
+                  className="inline-block mt-auto px-4 py-3 bg-[#ff532c] text-white font-medium text-sm rounded-full shadow-md transition-all duration-300 ease-in-out hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-[#ff532c] focus:ring-offset-2"
                 >
                   Learn More
                 </Link>
@@ -151,13 +151,14 @@ const Home = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-[900px] mx-auto bg-black/60 p-10 rounded-lg text-center">
-          <h2 className="text-3xl font-bold text-[#C1932D] mb-5">
-            Exclusive Offers
+          <h2 className="text-3xl font-bold text-[#ff532c] mb-5">
+            Sweet Deals Just for You
           </h2>
           <p className="text-lg leading-relaxed mb-8">
-            Experience luxury at Thamaravila Wilpattu with our special offers!
-            Enjoy a secluded getaway with exclusive discounts, personalized
-            services, and unforgettable wildlife adventures.
+            Treat yourself to our exclusive cake offers! From custom birthday
+            creations to elegant wedding cakes, enjoy special discounts and
+            personalized designs to make your celebrations even more memorable.
+            Don’t miss out on these limited-time offers!
           </p>
 
           <Link

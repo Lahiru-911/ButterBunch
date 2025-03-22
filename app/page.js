@@ -134,11 +134,11 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="relative w-full text-white py-[100px] px-5 overflow-hidden">
+      <section className="relative w-full text-white py-16 md:py-24 px-5 overflow-hidden">
         {/* Next.js Image as background */}
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/offers.jpg" // Make sure the image exists in the public/images directory
+            src="/o1.jpg" // Ensure this image exists in the public/images directory
             alt="Exclusive Offers Background"
             layout="fill"
             objectFit="cover"
@@ -146,15 +146,15 @@ const Home = () => {
             quality={100}
           />
           {/* Optional overlay for darkening */}
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-[900px] mx-auto bg-black/60 p-10 rounded-lg text-center">
-          <h2 className="text-3xl font-bold text-[#ff532c] mb-5">
+        <div className="relative z-10 max-w-4xl mx-auto bg-white/50 p-8 md:p-12 text-center rounded-xl shadow-lg">
+          <h2 className="text-3xl font-bold text-black mb-5 sm:text-4xl lg:text-5xl">
             Sweet Deals Just for You
           </h2>
-          <p className="text-lg leading-relaxed mb-8">
+          <p className="text-lg leading-relaxed mb-8 sm:text-xl text-black">
             Treat yourself to our exclusive cake offers! From custom birthday
             creations to elegant wedding cakes, enjoy special discounts and
             personalized designs to make your celebrations even more memorable.
@@ -165,50 +165,38 @@ const Home = () => {
             href="https://www.facebook.com/thamaravilawilpattu"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-[#C1932D] text-white text-lg font-bold rounded hover:bg-black hover:text-[#C1932D] transition duration-300"
+            className="bg-[#ff532c] text-white text-sm md:text-base px-4 py-2 rounded-4xl hover:bg-[#ff412cf4] transition duration-300"
           >
             View Offers
           </Link>
         </div>
       </section>
 
-      <section className="max-w-[1200px] mx-auto py-20 px-5 text-center">
-        <h2 className="text-3xl font-bold text-[#C1932D] mb-10">
-          Sustainability
+      <section className="max-w-screen-xl mx-auto py-16 px-6 text-center">
+        <h2 className="text-3xl font-semibold text-[#ff532c] mb-12 sm:text-4xl lg:text-5xl">
+          Sustainable Baking Practices
         </h2>
 
-        <div className="flex flex-wrap justify-center items-center gap-5">
+        <div className="flex flex-wrap justify-center gap-10">
           {/* Sustainability Image */}
-          <div className="flex-1 max-w-[500px]">
+          <div className="flex-1 max-w-md sm:max-w-[450px] lg:max-w-[500px]">
             <Image
               src="/sustainability.jpg" // Ensure the image is in your public/images folder
               alt="Sustainability"
               width={500}
               height={350}
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
 
           {/* Sustainability Content */}
-          <div className="flex-1 max-w-[500px] text-left">
-            <h3 className="text-xl font-semibold text-[#C1932D] mb-3">
-              Nature-Sensitive Lodge
-            </h3>
-            <p className="text-base text-[#333] leading-relaxed">
-              Thamaravila Wilpattu, as a nature-sensitive lodge located close to
-              the National Park, has taken serious measures towards
-              environmental sustainability.
-            </p>
-
-            <h3 className="text-lg font-semibold text-[#C1932D] mt-8 mb-3">
-              Avoid Plastic
-            </h3>
-            <p className="text-base text-[#333] leading-relaxed">
-              We provide reusable glass bottles in guest rooms for drinking
-              water. We do not provide disposable toiletry items in guest
-              bathrooms. All the bottles are refilled with Authentic Ceylonese
-              products provided by a locally based supplier committed to
-              sustainability.
+          <div className="flex-1 max-w-md sm:max-w-[450px] lg:max-w-[500px] text-left">
+            <p className="text-base sm:text-lg text-[#333] leading-relaxed">
+              At Butter Bunch, we believe that every sweet treat should be made
+              with love and care for the planet. That's why we prioritize
+              sustainable ingredients, eco-friendly packaging, and waste
+              reduction in every step of our baking process. Enjoy our delicious
+              cakes, knowing you're making a positive impact!
             </p>
           </div>
         </div>

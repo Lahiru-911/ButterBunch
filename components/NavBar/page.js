@@ -59,8 +59,8 @@ const Navbar = () => {
         {/* Book Now Button (Hidden on mobile) */}
         <div className="hidden md:block">
           <Link href="/contact">
-            <button className="bg-yellow-600 text-white px-5 py-2 rounded-md hover:bg-yellow-700 transition duration-300">
-              BOOK NOW
+            <button className="bg-[#e86e16] text-white px-5 py-2 rounded-4xl hover:bg-yellow-600 transition duration-300">
+              Order Now
             </button>
           </Link>
         </div>

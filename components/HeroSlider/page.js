@@ -1,4 +1,4 @@
-"use client"; // If you're using Next.js 13 app directory, else remove this line.
+"use client";
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -54,35 +54,37 @@ export default function HeroSlider() {
       <div className="relative z-20 flex flex-col items-center justify-center text-center text-white h-full px-4">
         <h2 className="text-2xl mb-2">WELCOME TO</h2>
         <h1 className="text-4xl md:text-5xl font-bold mb-2">
-          Thamarawila Wilpaththu – Luxury Tented Safari Villas
+          Butter Bunch Cakes
         </h1>
-        <h3 className="text-xl mb-6">Resort & Hotel</h3>
+        <h3 className="text-xl mb-6">Delicious Cakes & Sweet Treats</h3>
         <Link
           href="/about"
-          className="px-6 py-3 bg-white text-black rounded-md font-semibold hover:bg-[#b67d29] hover:text-white transition duration-300"
+          className="px-6 py-3 bg-white text-black rounded-4xl font-semibold hover:bg-[#e86e16] hover:text-white transition duration-300"
         >
-          LEARN MORE
+          EXPLORE OUR CAKES
         </Link>
       </div>
 
       {/* Controls */}
-      <div className="absolute top-1/2 left-0 right-0 flex justify-between items-center px-4 z-30">
+      <div className="absolute top-1/2 left-0 right-0 flex justify-between items-center px-6 z-30 transform -translate-y-1/2">
         <button
           onClick={prevSlide}
-          className="bg-white/60 hover:bg-white/90 text-black rounded-full p-3 transition duration-300"
+          aria-label="Previous Slide"
+          className="bg-white/70 hover:bg-[#e86e16] hover:text-white text-[#e86e16] shadow-md rounded-full p-1 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e86e16] focus:ring-offset-2"
         >
-          &#10094;
+          <span className="text-lg">&#10094;</span>
         </button>
         <button
           onClick={nextSlide}
-          className="bg-white/60 hover:bg-white/90 text-black rounded-full p-3 transition duration-300"
+          aria-label="Next Slide"
+          className="bg-white/70 hover:bg-[#e86e16] hover:text-white text-[#e86e16] shadow-md rounded-full p-1 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e86e16] focus:ring-offset-2"
         >
-          &#10095;
+          <span className="text-lg">&#10095;</span>
         </button>
       </div>
 
       {/* Overlay for darker effect (optional) */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-10"></div>
     </section>
   );
 }

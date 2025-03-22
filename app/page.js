@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroSlider from "@/components/HeroSlider/page";
 import React from "react";
-import LocationSection from "@/components/LocationSection/page";
+import LocationSection from "@/components/LetCelebrate/page";
+import LetCelebrate from "@/components/LetCelebrate/page";
 
 const Home = () => {
   const services = [
@@ -82,7 +83,7 @@ const Home = () => {
         </div>
       </section>
 
-      <LocationSection />
+      <LetCelebrate/>
 
       <section className="max-w-[1200px] mx-auto px-5 py-20 text-center">
         <h2 className="text-3xl font-bold text-[#C1932D] mb-10">

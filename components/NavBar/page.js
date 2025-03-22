@@ -51,7 +51,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/contact" className="text-gray-800 hover:text-[#ff532c] transition duration-300">
-              CONTACT US
+              CONTACT
             </Link>
           </li>
         </ul>

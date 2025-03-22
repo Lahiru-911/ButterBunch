@@ -1,85 +1,102 @@
 import Image from "next/image";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-[#222] text-white text-center py-12 px-5">
-      <div className="max-w-screen-lg mx-auto">
-        {/* Logo */}
-        <Image
-          src="/logo.png" // Ensure the image is in your public/images folder
-          alt="Thamaravila Logo"
-          width={200}
-          height={50}
-          className="mb-5 mx-auto"
-        />
-        
-        {/* Address */}
-        <p className="text-base mb-2">
-          Thamaravila Resort, Rookada Weva Road Horuwila, Wilpattu-20850
-        </p>
+    <footer className="bg-[#323232] text-gray-300 py-8 px-8 sm:px-6 md:px-12 mt-24">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Left Section */}
+        <div className="flex flex-col items-start gap-4">
+          <Image
+            src="/logo.png" // Logo for your cake website "Butter Bunch"
+            alt="Butter Bunch Logo"
+            width={150} // Reduced logo size for a more compact footer
+            height={40}
+            className="mb-2"
+          />
+          <p className="text-sm sm:text-base leading-relaxed">
+            At Butter Bunch, we create delicious cakes with love. Join us in celebrating life's sweetest moments!
+          </p>
+          <div className="flex space-x-4 mt-4">
+            <a
+              href="https://www.facebook.com/butterbunch"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 transform transition duration-300"
+            >
+              <Image
+                src="/fb.png"
+                alt="Facebook"
+                width={30}
+                height={30}
+                className="hover:text-[#ff532c]"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/butterbunch"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 transform transition duration-300"
+            >
+              <Image
+                src="/inst.png"
+                alt="Instagram"
+                width={30}
+                height={30}
+                className="hover:text-[#ff532c]"
+              />
+            </a>
+            <a
+              href="https://www.pinterest.com/butterbunch"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 transform transition duration-300"
+            >
+              <Image
+                src="/yt.png"
+                alt="Pinterest"
+                width={30}
+                height={30}
+                className="hover:text-[#ff532c]"
+              />
+            </a>
+          </div>
+        </div>
 
-        {/* Phone */}
-        <p className="text-base mb-2">
-          Tel:{" "}
-          <a href="tel:+9471948898" className="text-white hover:text-[#C1932D]">
-            +94 71 94 88 98
-          </a>
-        </p>
+        {/* Middle Section */}
+        <div className="flex flex-col items-start gap-2">
+          <h2 className="text-white text-lg font-semibold mb-2">Company</h2>
+          <ul className="space-y-2 text-sm sm:text-base">
+            <li className="hover:text-[#ff532c] cursor-pointer">Home</li>
+            <li className="hover:text-[#ff532c] cursor-pointer">Products</li>
+            <li className="hover:text-[#ff532c] cursor-pointer">About Us</li>
+            <li className="hover:text-[#ff532c] cursor-pointer">Contact</li>
+          </ul>
+        </div>
 
-        {/* Email */}
-        <p className="text-base mb-5">
-          Email:{" "}
-          <a
-            href="mailto:reservations@thamaravila.com"
-            className="text-[#C1932D] hover:text-[#b67d29] transition duration-300"
-          >
-            reservations@thamaravila.com
-          </a>
-        </p>
-
-        {/* Copyright */}
-        <p className="text-sm mb-5">© 2025 Thamaravila Resort - Wilpattu.</p>
-
-        {/* Social Icons */}
-        <div className="mt-5 flex justify-center space-x-6">
-          <a
-            href="https://www.facebook.com/thamaravilawilpattu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/fb.png" // Ensure the image is in your public/images folder
-              alt="Facebook"
-              width={30}
-              height={30}
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/thamaravila_wilpattu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/inst.png" // Ensure the image is in your public/images folder
-              alt="Instagram"
-              width={30}
-              height={30}
-            />
-          </a>
-          <a
-            href="https://www.tripadvisor.com/Hotel_Review-g3186994-d17768551-Reviews-Thamaravila_Wilpattu_Luxury_Tented_Safari_Villas-Wilpattu_National_Park_North_Wester.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/yt.png" // Ensure the image is in your public/images folder
-              alt="YouTube"
-              width={30}
-              height={30}
-            />
-          </a>
+        {/* Right Section */}
+        <div className="flex flex-col items-start gap-2">
+          <h2 className="text-white text-lg font-semibold mb-2">Get in Touch</h2>
+          <ul className="space-y-2 text-sm sm:text-base">
+            <li>
+              Phone: <span className="hover:text-[#ff532c] cursor-pointer">+94 71 94 88 98</span>
+            </li>
+            <li>
+              Email:{" "}
+              <a href="mailto:info@butterbunch.com" className="hover:text-[#ff532c] cursor-pointer">
+                info@butterbunch.com
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+
+      {/* Footer Bottom */}
+      <hr className="my-6 border-gray-500" />
+      <p className="text-center text-xs sm:text-sm text-gray-50">
+        &copy; 2025 Butter Bunch Bakery. All Rights Reserved.
+      </p>
     </footer>
   );
-}
+};
+
+export default Footer;

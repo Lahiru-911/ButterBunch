@@ -39,21 +39,21 @@ const Home = () => {
           <h1 className="text-3xl md:text-4xl font-bold text-[#ff532c] mb-4">
             Butter Bunch Cakes
           </h1>
-          <p className="text-base leading-relaxed text-gray-700 mb-4 text-justify">
+          <p className="text-sm md:text-base leading-relaxed text-gray-700 mb-4 text-justify">
             Butter Bunch Cakes is a specialty bakery that brings sweet moments
             to life with beautifully handcrafted cakes and confections. Founded
             out of a love for baking and a passion for creativity, Butter Bunch
             Cakes has become a go-to destination for those seeking cakes that
             are as stunning as they are delicious.
           </p>
-          <p className="text-base leading-relaxed text-gray-700 mb-4 text-justify">
+          <p className="text-sm md:text-base leading-relaxed text-gray-700 mb-4 text-justify">
             Our journey began in a cozy home kitchen where timeless family
             recipes were reimagined into delightful treats. Today, Butter Bunch
             Cakes offers a wide range of custom cakes, cupcakes, and desserts
             that are perfect for weddings, birthdays, and every special occasion
             in between.
           </p>
-          <p className="text-base leading-relaxed text-gray-700 mb-4 text-justify">
+          <p className="text-sm md:text-base leading-relaxed text-gray-700 mb-4 text-justify">
             At Butter Bunch Cakes, we believe in quality without compromise.
             That’s why we use only the finest ingredients—real butter,
             farm-fresh eggs, and locally sourced flavors—to create desserts that
@@ -65,19 +65,19 @@ const Home = () => {
 
           <Link
             href="/services"
-            className="inline-block px-4 py-2 border border-[#e86e16] text-black font-semibold hover:bg-[#e86e16] hover:text-white transition duration-300 rounded-4xl"
+            className="inline-block px-4 py-1 text-sm border border-[#e86e16] text-black font-semibold hover:bg-[#e86e16] hover:text-white transition duration-300 rounded-4xl"
           >
-            Services →
+            Products →
           </Link>
         </div>
         {/* Right Side (Video) */}
-        <div className="flex-1">
+        <div className="flex-1 mt-16 ">
           <video
-            src="/g.mp4" // replace with your actual video path
+            src="/g.mp4" 
             autoPlay
             muted
             loop
-            className="w-full h-auto rounded-lg"
+            className="w-full h-auto rounded-lg shadow-[#e86e16] outline-1 outline-[#e86e16] shadow-md"
           />
         </div>
       </section>

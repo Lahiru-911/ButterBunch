@@ -41,7 +41,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/services" className="text-gray-800 hover:text-[#ff532c] transition duration-300">
-              SERVICES
+              PRODUCTS
             </Link>
           </li>
           <li>

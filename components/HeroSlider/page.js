@@ -57,7 +57,7 @@ export default function HeroSlider() {
                   <h1 className="text-3xl md:text-5xl font-bold mb-2">
                     Butter Bunch Cakes
                   </h1>
-                  <h3 className="text-lg md:text-xl mb-6">
+                  <h3 className="text-lg md:text-xl font-semibold mb-6">
                     Delicious Cakes & Sweet Treats
                   </h3>
                   <Link

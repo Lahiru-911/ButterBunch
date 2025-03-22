@@ -67,7 +67,7 @@ const Home = () => {
 
           <Link
             href="/services"
-            className="inline-block px-4 py-1 text-sm border border-[#e86e16] text-black font-semibold hover:bg-[#e86e16] hover:text-white transition duration-300 rounded-4xl"
+            className="inline-block hover:text-white bg-[#ff532c] text-white text-sm md:px-5 md:py-2 px-3 py-1 rounded-4xl hover:bg-[#ff412cf4] transition duration-300"
           >
             Products →
           </Link>
@@ -117,7 +117,7 @@ const Home = () => {
                 <h3 className="text-2xl font-semibold text-[#ff532c] mb-4 group-hover:text-black transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 text-base mb-6 flex-grow leading-relaxed text-justify">
+                <p className="text-gray-600 text-sm md:text-base mb-6 flex-grow leading-relaxed text-justify">
                   {service.description}
                 </p>
 
@@ -147,11 +147,11 @@ const Home = () => {
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto bg-white/50 p-8 md:p-12 text-center rounded-xl shadow-lg">
+        <div className="relative z-10 max-w-4xl mx-auto bg-white/60 p-6 md:p-10 text-center rounded-xl shadow-lg">
           <h2 className="text-3xl font-bold text-black mb-5 sm:text-4xl lg:text-5xl">
             Sweet Deals Just for You
           </h2>
-          <p className="text-lg leading-relaxed mb-8 sm:text-xl text-black">
+          <p className="text-lg leading-relaxed mb-8 sm:text-xl text-black text-justify">
             Treat yourself to our exclusive cake offers! From custom birthday
             creations to elegant wedding cakes, enjoy special discounts and
             personalized designs to make your celebrations even more memorable.
@@ -190,11 +190,12 @@ const Home = () => {
           {/* Text Section */}
           <div className="flex justify-center items-center">
             <p className="text-base sm:text-lg lg:text-xl text-[#333] leading-relaxed max-w-lg mx-auto">
-              At <span className="font-semibold">Butter Bunch</span>, we believe that every sweet treat should be made
-              with love and care for the planet. That's why we prioritize
-              sustainable ingredients, eco-friendly packaging, and waste
-              reduction in every step of our baking process. Enjoy our delicious
-              cakes, knowing you're making a positive impact!
+              At <span className="font-semibold">Butter Bunch</span>, we believe
+              that every sweet treat should be made with love and care for the
+              planet. That's why we prioritize sustainable ingredients,
+              eco-friendly packaging, and waste reduction in every step of our
+              baking process. Enjoy our delicious cakes, knowing you're making a
+              positive impact!
             </p>
           </div>
         </div>

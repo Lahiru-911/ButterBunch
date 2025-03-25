@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link href="/">
             <img
-              src="/logo.png" // Put your logo in the public/images folder
+              src="/logo.png" 
               alt="Logo"
               className="h-12 w-auto"
             />

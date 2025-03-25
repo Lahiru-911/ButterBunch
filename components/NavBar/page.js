@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-gray-200 shadow-md">
-      <div className="navbar-container flex items-center justify-between px-4 py-3 md:px-8">
+      <div className="navbar-container flex items-center justify-between px-4 py-1 md:px-8">
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/">
@@ -59,7 +59,7 @@ const Navbar = () => {
         {/* Book Now Button (Hidden on mobile) */}
         <div className="hidden md:block">
           <Link href="/contact">
-            <button className="bg-[#ff532c] text-white px-5 py-2 rounded-4xl hover:bg-[#ff412cf4] transition duration-300">
+            <button className="bg-[#ff532c] text-white text-sm px-4 py-2 rounded-4xl hover:bg-[#ff412cf4] transition duration-300">
               Order Now
             </button>
           </Link>

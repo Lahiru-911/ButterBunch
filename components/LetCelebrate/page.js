@@ -17,7 +17,7 @@ export default function LetCelebrate() {
       {/* Content */}
       <div className="relative z-10 max-w-[800px] mx-auto flex flex-col justify-center items-center h-full px-4">
         <h2 className="text-3xl md:text-5xl font-extrabold mb-6 drop-shadow-lg tracking-wide animate-fade-in">
-          Let's Celebrate!
+          Let&#39;s Celebrate!
         </h2>
         <p className="text-lg md:text-xl font-light mb-8 leading-relaxed animate-fade-in delay-150">
           A cake makes every celebration sweeter. Whether you're planning a

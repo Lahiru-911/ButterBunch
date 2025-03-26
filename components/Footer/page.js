@@ -6,57 +6,43 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Section */}
         <div className="flex flex-col items-start gap-4">
-          <Image
-            src="/logo.png" // Logo for your cake website "Butter Bunch"
-            alt="Butter Bunch Logo"
-            width={150} // Reduced logo size for a more compact footer
-            height={40}
-            className="mb-2"
-          />
+          <div className="mb-2">
+            <Image
+              src="/logo.png"
+              alt="Butter Bunch Logo"
+              width={150}
+              height={40}
+            />
+          </div>
           <p className="text-sm sm:text-base leading-relaxed">
             At Butter Bunch, we create delicious cakes with love. Join us in celebrating life's sweetest moments!
           </p>
           <div className="flex space-x-4 mt-4">
-            <a
-              href="https://www.facebook.com/butterbunch"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:scale-110 transform transition duration-300"
-            >
+            <a href="https://www.facebook.com/butterbunch" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/fb.png"
                 alt="Facebook"
                 width={30}
                 height={30}
-                className="hover:text-[#ff532c]"
+                className="transition-transform duration-300 hover:scale-110"
               />
             </a>
-            <a
-              href="https://www.instagram.com/butterbunch"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:scale-110 transform transition duration-300"
-            >
+            <a href="https://www.instagram.com/butterbunch" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/inst.png"
                 alt="Instagram"
                 width={30}
                 height={30}
-                className="hover:text-[#ff532c]"
+                className="transition-transform duration-300 hover:scale-110"
               />
             </a>
-            <a
-              href="https://www.pinterest.com/butterbunch"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:scale-110 transform transition duration-300"
-            >
+            <a href="https://www.pinterest.com/butterbunch" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/yt.png"
                 alt="Pinterest"
                 width={30}
                 height={30}
-                className="hover:text-[#ff532c]"
+                className="transition-transform duration-300 hover:scale-110"
               />
             </a>
           </div>
@@ -78,10 +64,11 @@ const Footer = () => {
           <h2 className="text-white text-lg font-semibold mb-2">Get in Touch</h2>
           <ul className="space-y-2 text-sm sm:text-base">
             <li>
-              Phone: <span className="hover:text-[#ff532c] cursor-pointer">+94 71 94 88 98</span>
+              Phone:
+              <span className="hover:text-[#ff532c] cursor-pointer"> +94 71 94 88 98</span>
             </li>
             <li>
-              Email:{" "}
+              Email:
               <a href="mailto:info@butterbunch.com" className="hover:text-[#ff532c] cursor-pointer">
                 info@butterbunch.com
               </a>
